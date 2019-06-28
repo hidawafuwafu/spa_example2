@@ -18,5 +18,13 @@
             <button id="b2" name="2">パー</button>
         </div>
     </div>
+    <script>//ここから追記
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service_worker.js')
+    .then(function() {
+      console.log('Service worker registered!');
+    });
+}
+    </script>//ここまで追記
 </body>
 </html>
